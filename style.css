@@ -12,6 +12,8 @@ a {
 	text-decoration: none;
 }
 
+/* NAVBAR */
+
 #navbar {
 	position: fixed;
 	left: 0;
@@ -42,7 +44,7 @@ a {
 }
 
 #navbar .logo span {
-	color: blue;
+	color: royalblue;
 }
 
 #navbar ul {
@@ -51,7 +53,7 @@ a {
 
 #navbar ul li {
 	list-style: none;
-	margin-left: 35px;
+	margin-left: 45px;
 }
 
 #navbar ul li a {
@@ -62,8 +64,10 @@ a {
 
 #navbar ul li a:hover,
 #navbar ul li.active a {
-	color: blue;
+	color: royalblue;
 }
+
+/* HOME SECTION */
 
 #home {
 	display: flex;
@@ -92,7 +96,7 @@ a {
 	position: relative;
 	display: inline-block;
 	color: transparent;
-	-webkit-text-stroke: 0.7px blue;
+	-webkit-text-stroke: 0.7px royalblue;
 	animation: display-text 5s linear infinite;
 }
 
@@ -106,8 +110,8 @@ a {
 	content: attr(data-text);
 	position: absolute;
 	width: 0;
-	border-right: 2px solid blue;
-	color: blue;
+	border-right: 2px solid royalblue;
+	color: royalblue;
 	white-space: nowrap;
 	overflow: hidden;
 	animation: fill-text 5s linear infinite;
@@ -138,10 +142,10 @@ a {
 .btn {
 	display: inline-block;
 	padding: 10px 30px;
-	background: blue;
-	border: 2px solid blue;
+	background: royalblue;
+	border: 2px solid royalblue;
 	border-radius: 40px;
-	box-shadow: 0 2px 4px blue;
+	box-shadow: 0 2px 4px royalblue;
 	font-size: 16px;
 	color: #1f242d;
 	font-weight: 600;
@@ -150,7 +154,7 @@ a {
 
 .btn:hover {
 	background: transparent;
-	color: blue;
+	color: royalblue;
 	box-shadow: none;
 }
 
@@ -161,18 +165,18 @@ a {
 .sci a {
 	display: inline-flex;
 	padding: 8px;
-	border: 2px solid blue;
+	border: 2px solid royalblue;
 	border-radius: 50%;
 	font-size: 20px;
-	color: blue;
+	color: royalblue;
 	margin: 0 8px;
 	transition: 0.5s;
 }
 
 .sci a:hover {
-	background: blue;
+	background: royalblue;
 	color: #1f242d;
-	box-shadow: 0 2px 4px blue;
+	box-shadow: 0 2px 4px royalblue;
 }
 
 .img-box {
@@ -193,7 +197,7 @@ a {
 	position: absolute;
 	width: 500px;
 	height: 500px;
-	background: conic-gradient(transparent, transparent, transparent, blue);
+	background: conic-gradient(transparent, transparent, transparent, royalblue);
 	transform: rotate(0deg);
 	animation: rotate-border 10s linear infinite;
 }
@@ -255,3 +259,5 @@ a {
 		transform: translateY(0%);
 	}
 }
+
+/* ABOUT SECTION */
