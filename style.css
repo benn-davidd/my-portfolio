@@ -7,6 +7,11 @@
 	font-family: "Poppins", sans-serif;
 }
 
+body {
+	background: #1f242d;
+	background-image: url(http://www.transparenttextures.com/patterns/cartographer.png);
+}
+
 a {
 	color: #fff;
 	text-decoration: none;
@@ -235,15 +240,15 @@ a {
 	/* mix-blend-mode: lighten; */
 }
 
-.bars-animation {
+/* .bars-animation {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	display: flex;
 	z-index: -1;
-}
+} */
 
-.bar {
+/* .bar {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -252,7 +257,7 @@ a {
 	transform: translateY(-100%);
 	animation: show-bars 0.3s ease-in-out forwards;
 	animation-delay: calc(0.1s * var(--i));
-}
+} */
 
 @keyframes show-bars {
 	100% {
@@ -261,3 +266,81 @@ a {
 }
 
 /* ABOUT SECTION */
+
+#about {
+	display: flex;
+	align-items: center;
+	height: fit-content;
+	padding: 110px 9% 30px;
+	color: #fff;
+}
+
+.about {
+	padding: 4% 5%;
+	border-radius: 10px;
+	background: #14181f;
+	height: 100%;
+	width: 100%;
+	animation: show-content 1.5s linear forwards;
+	animation-delay: 1.4s;
+}
+
+.about-heading {
+	font-size: xx-large;
+	font-weight: 600;
+}
+
+.about-wrapper,
+.about-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.about-info {
+	margin: 2% 0;
+	padding: 20px 40px;
+	border-radius: 5px;
+	border-bottom: 1px solid royalblue;
+	border-left: 1px solid royalblue;
+}
+
+.about-subheading {
+	font-size: 1.2rem;
+	color: white;
+	border-left: 4px solid royalblue;
+	padding-left: 0.6rem;
+	margin: 1.5rem 0;
+}
+
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
+}
+
+.skill-card {
+	background: #111;
+	border-radius: 8px;
+	padding: 1rem;
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	transition: border 0.3s, transform 0.3s;
+}
+
+.skill-card:hover {
+	transform: translateY(-2px);
+	border-color: royalblue;
+	mix-blend-mode: lighten;
+}
+
+.skill-card img {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.skill-card span {
+	font-weight: bold;
+}
