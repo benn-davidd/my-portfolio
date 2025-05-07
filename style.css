@@ -31,8 +31,13 @@ a {
 	z-index: 100;
 	visibility: hidden;
 	opacity: 0;
+	transition: background-color 0.3s ease;
 	animation: show-content 1.5s linear forwards;
 	animation-delay: 1s;
+}
+
+#navbar.scrolled {
+	background-color: black;
 }
 
 @keyframes show-content {
