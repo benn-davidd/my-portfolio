@@ -1,4 +1,4 @@
-// NAVBAR background change on scroll
+// NAVBAR background change/visible on scroll
 
 window.addEventListener("scroll", () => {
 	const navbar = document.getElementById("navbar");
