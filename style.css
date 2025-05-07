@@ -12,7 +12,7 @@ a {
 	text-decoration: none;
 }
 
-.navbar {
+#navbar {
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -35,32 +35,37 @@ a {
 	}
 }
 
-.navbar .logo {
+#navbar .logo {
 	font-size: 30px;
-	font-weight: 700;
+	font-weight: 600;
+	letter-spacing: 2px;
 }
 
-.navbar ul {
+#navbar .logo span {
+	color: blue;
+}
+
+#navbar ul {
 	display: flex;
 }
 
-.navbar ul li {
+#navbar ul li {
 	list-style: none;
 	margin-left: 35px;
 }
 
-.navbar ul li a {
-	font-size: 20px;
+#navbar ul li a {
+	font-size: 18px;
 	font-weight: 500;
 	transition: 0.5s;
 }
 
-.navbar ul li a:hover,
-.navbar ul li.active a {
+#navbar ul li a:hover,
+#navbar ul li.active a {
 	color: blue;
 }
 
-.home {
+#home {
 	display: flex;
 	align-items: center;
 	gap: 50px;
