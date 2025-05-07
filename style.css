@@ -32,12 +32,12 @@ a {
 	visibility: hidden;
 	opacity: 0;
 	transition: background-color 0.3s ease;
-	animation: show-content 1.5s linear forwards;
-	animation-delay: 1s;
+	animation: show-content 1.2s linear forwards;
+	animation-delay: 0.8s;
 }
 
 #navbar.scrolled {
-	background-color: black;
+	background-color: #111;
 }
 
 @keyframes show-content {
@@ -88,8 +88,8 @@ a {
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
-	animation: show-content 1.5s linear forwards;
-	animation-delay: 1.4s;
+	animation: show-content 1.3s linear forwards;
+	animation-delay: 1.2s;
 }
 
 .home-info h1 {
@@ -283,15 +283,17 @@ a {
 .about {
 	padding: 4% 5%;
 	border-radius: 10px;
-	background: #14181f;
+	background: #1f242d;
 	height: 100%;
 	width: 100%;
-	animation: show-content 1.5s linear forwards;
-	animation-delay: 1.4s;
+	visibility: hidden;
+	opacity: 0;
+	animation: show-content 1.3s linear forwards;
+	animation-delay: 1.2s;
 }
 
 .about-heading {
-	font-size: xx-large;
+	font-size: 1.8rem;
 	font-weight: 600;
 }
 
