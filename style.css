@@ -7,10 +7,6 @@
 	font-family: "Poppins", sans-serif;
 }
 
-body {
-	background: #1f242d;
-}
-
 a {
 	color: #fff;
 	text-decoration: none;
@@ -160,4 +156,27 @@ a {
 	width: 90%;
 	object-fit: cover;
 	/* mix-blend-mode: lighten; */
+}
+
+.bars-animation {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	z-index: -1;
+}
+
+.bar {
+	width: 100%;
+	height: 100%;
+	background: #1f242d;
+	transform: translateY(-100%);
+	animation: show-bars 0.5s ease-in-out forwards;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes show-bars {
+	100% {
+		transform: translateY(0%);
+	}
 }
