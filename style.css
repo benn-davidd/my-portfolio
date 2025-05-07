@@ -189,6 +189,18 @@ a {
 	width: 500px;
 	height: 500px;
 	background: conic-gradient(transparent, transparent, transparent, blue);
+	transform: rotate(0deg);
+	animation: rotate-border 10s linear infinite;
+}
+
+.img-box::after {
+	animation-delay: -5s;
+}
+
+@keyframes rotate-border {
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .img-item {
