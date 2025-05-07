@@ -22,6 +22,17 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
+	visibility: hidden;
+	opacity: 0;
+	animation: show-content 1.5s linear forwards;
+	animation-delay: 1s;
+}
+
+@keyframes show-content {
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
 }
 
 .navbar .logo {
@@ -171,7 +182,7 @@ a {
 	height: 100%;
 	background: #1f242d;
 	transform: translateY(-100%);
-	animation: show-bars 0.5s ease-in-out forwards;
+	animation: show-bars 0.3s ease-in-out forwards;
 	animation-delay: calc(0.1s * var(--i));
 }
 
