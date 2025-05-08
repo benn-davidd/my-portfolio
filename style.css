@@ -282,8 +282,8 @@ a {
 
 .about {
 	padding: 4% 5%;
-	border-radius: 10px;
 	background: #1f242d;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 	height: 100%;
 	width: 100%;
 	visibility: hidden;
@@ -292,9 +292,17 @@ a {
 	animation-delay: 1.2s;
 }
 
-.about-heading {
+.heading {
 	font-size: 1.8rem;
 	font-weight: 600;
+}
+
+.subheading {
+	font-size: 1.2rem;
+	color: white;
+	border-left: 4px solid royalblue;
+	padding-left: 0.6rem;
+	margin: 1.5rem 0;
 }
 
 .about-wrapper,
@@ -309,14 +317,6 @@ a {
 	border-radius: 5px;
 	border-bottom: 1px solid royalblue;
 	border-left: 1px solid royalblue;
-}
-
-.about-subheading {
-	font-size: 1.2rem;
-	color: white;
-	border-left: 4px solid royalblue;
-	padding-left: 0.6rem;
-	margin: 1.5rem 0;
 }
 
 .skills-grid {
@@ -353,3 +353,127 @@ a {
 }
 
 /* PORTFOLIO SECTION */
+
+#portfolio {
+	display: flex;
+	align-items: center;
+	height: fit-content;
+	padding: 110px 9% 30px;
+	color: #fff;
+}
+
+.portfolio {
+	padding: 4% 5%;
+	background: #1f242d;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	animation: show-content 1.3s linear forwards;
+	animation-delay: 1.2s;
+}
+
+.portfolio-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(300px, 1fr));
+	gap: 1rem;
+}
+
+.portfolio-card {
+	position: relative;
+	background: white;
+	border-radius: 8px;
+	padding: 1rem;
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	transition: border 0.3s;
+	overflow: hidden;
+	height: 300px;
+}
+
+.portfolio-card:hover {
+	border-color: royalblue;
+}
+
+.portfolio-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.layer {
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(6px);
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-sizing: border-box;
+	transition: bottom 0.4s ease;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio-card:hover .layer {
+	bottom: 0;
+}
+
+.view-project {
+	display: none;
+	position: absolute;
+	bottom: 15%;
+	align-self: center;
+	color: white;
+	text-decoration: none;
+	z-index: 10;
+	font-size: xx-large;
+}
+
+.portfolio-card:hover .view-project {
+	display: block;
+}
+
+.swiper-popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 100;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+
+.swiper-container {
+	width: 90%;
+	max-width: 800px;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: auto;
+	display: block;
+	align-self: center;
+}
