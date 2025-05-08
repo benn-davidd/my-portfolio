@@ -482,3 +482,25 @@ a {
 .swiper-pagination {
 	background-color: #fff;
 }
+
+/* CONTACT SECTION */
+
+#contact {
+	display: flex;
+	align-items: center;
+	height: fit-content;
+	padding: 110px 9% 30px;
+	color: #fff;
+}
+
+.contact {
+	padding: 4% 5%;
+	background: #1f242d;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	animation: show-content 1.3s linear forwards;
+	animation-delay: 1.2s;
+}

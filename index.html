@@ -8,17 +8,26 @@
 			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/bcb5ef96de.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
 	</head>
 	<body>
 		<!-- NAVBAR -->
 		<nav id="navbar">
 			<a href="./index.html" class="logo">benn<span>.</span></a>
 			<ul>
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="./about.html">About</a></li>
-				<li><a href="./portfolio.html">Portfolio</a></li>
-				<li><a href="./contact.html">Contact</a></li>
+				<li class="active"><a href="#navbar">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<!-- BARS ANIMATION -->
@@ -62,6 +71,233 @@
 				</div>
 			</div>
 		</section>
+		<!-- ABOUT SECTION -->
+		<section id="about">
+			<div class="about">
+				<div class="about-wrapper">
+					<h1 class="heading">ABOUT ME</h1>
+					<div class="about-info">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+							soluta itaque repudiandae unde quibusdam labore repellat fuga
+							obcaecati dicta quasi saepe enim accusamus, libero optio magni cum
+							ex animi! Laborum.
+						</p>
+					</div>
+				</div>
+				<div class="about-wrapper skills">
+					<h1 class="heading">MY TECHNICAL SKILLS</h1>
+					<h4 class="subheading">Languages</h4>
+					<div class="skills-grid">
+						<div class="skill-card active">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/48/javascript--v1.png"
+								alt="javascript--v1"
+							/>
+							<span>JavaScript</span>
+						</div>
+						<div class="skill-card">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/35/typescript.png"
+								alt="typescript"
+							/>
+							<span>TypeScript</span>
+						</div>
+						<div class="skill-card">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/35/html-5--v1.png"
+								alt="html-5--v1"
+							/>
+							<span>HTML</span>
+						</div>
+						<div class="skill-card">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/35/css3.png"
+								alt="css3"
+							/>
+							<span>CSS</span>
+						</div>
+					</div>
+					<h4 class="subheading">Frameworks & Libraries</h4>
+					<div class="skills-grid">
+						<div class="skill-card active">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/35/bootstrap--v2.png"
+								alt="bootstrap--v2"
+							/>
+							<span>Bootstrap</span>
+						</div>
+						<div class="skill-card">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/office/35/react.png"
+								alt="react"
+							/>
+							<span>React</span>
+						</div>
+						<div class="skill-card">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/35/angularjs.png"
+								alt="angularjs"
+							/>
+							<span>Angular</span>
+						</div>
+						<div class="skill-card">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/35/tailwind_css.png"
+								alt="tailwind_css"
+							/>
+							<span>Tailwind</span>
+						</div>
+					</div>
+					<h4 class="subheading">Development Tools</h4>
+					<div class="skills-grid">
+						<div class="skill-card active">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/external-those-icons-flat-those-icons/35/external-GitHub-Logo-social-media-those-icons-flat-those-icons-2.png"
+								alt="external-GitHub-Logo-social-media-those-icons-flat-those-icons-2"
+							/>
+							<span>GitHub</span>
+						</div>
+						<div class="skill-card">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/35/git.png"
+								alt="git"
+							/>
+							<span>Git</span>
+						</div>
+						<div class="skill-card">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/35/visual-studio-code-2019.png"
+								alt="visual-studio-code-2019"
+							/>
+							<span>VS Code</span>
+						</div>
+						<div class="skill-card">
+							<img
+								width="35"
+								height="35"
+								src="https://img.icons8.com/color/35/codesandbox.png"
+								alt="codesandbox"
+							/>
+							<span>CodeSandbox</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- PORFOLIO SECTION -->
+		<section id="portfolio">
+			<div class="portfolio">
+				<h1 class="heading">EXPLORE MY WORK</h1>
+				<div class="portfolio-grid">
+					<div class="portfolio-card">
+						<img src="./assets/portfolio website/p-w-1.png" alt="" />
+						<div class="layer">
+							<h3>Portfolio Website</h3>
+							<p>Short project description here.</p>
+							<a href="#" class="view-project" data-popup="popup1"
+								><i class="fa-solid fa-eye"></i
+							></a>
+						</div>
+					</div>
+					<div class="swiper-popup" id="popup1">
+						<div class="popup-overlay"></div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="./assets/portfolio website/p-w-1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./assets/portfolio website/p-w-2.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./assets/portfolio website/p-w-3.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="./assets/portfolio website/p-w-4.png" />
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="portfolio-card">
+						<div class="layer">
+							<h3>Rietech Solutions</h3>
+							<p>Short project description here.</p>
+							<a href="#" class="view-project" data-popup="popup2"
+								><i class="fa-solid fa-eye"></i
+							></a>
+						</div>
+					</div>
+					<div class="swiper-popup" id="popup2">
+						<div class="popup-overlay"></div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="image1.jpg" /></div>
+								<div class="swiper-slide"><img src="image2.jpg" /></div>
+								<div class="swiper-slide"><img src="image3.jpg" /></div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="portfolio-card">
+						<div class="layer">
+							<h3>Keeper App</h3>
+							<p>Short project description here.</p>
+							<a href="#" class="view-project" data-popup="popup3"
+								><i class="fa-solid fa-eye"></i
+							></a>
+						</div>
+					</div>
+					<div class="swiper-popup" id="popup3">
+						<div class="popup-overlay"></div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="image1.jpg" /></div>
+								<div class="swiper-slide"><img src="image2.jpg" /></div>
+								<div class="swiper-slide"><img src="image3.jpg" /></div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- CONTACT SECTION -->
+		<section id="contact">
+			<div class="contact">
+				<h1 class="heading">GET IN TOUCH</h1>
+			</div>
+		</section>
 	</body>
 	<script src="./script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>
