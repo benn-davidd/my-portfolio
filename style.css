@@ -378,13 +378,13 @@ a {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(300px, 1fr));
 	gap: 1rem;
+	margin-top: 2rem;
 }
 
 .portfolio-card {
 	position: relative;
 	background: white;
 	border-radius: 8px;
-	padding: 1rem;
 	border: 1px solid transparent;
 	display: flex;
 	align-items: center;
@@ -476,4 +476,8 @@ a {
 	height: auto;
 	display: block;
 	align-self: center;
+}
+
+.swiper-pagination {
+	background-color: #fff;
 }
