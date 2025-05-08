@@ -155,7 +155,7 @@ a {
 	background: royalblue;
 	border: 2px solid royalblue;
 	border-radius: 40px;
-	box-shadow: 0 2px 4px royalblue;
+	box-shadow: 0 0 6px royalblue;
 	font-size: 16px;
 	color: #1f242d;
 	font-weight: 600;
@@ -186,7 +186,7 @@ a {
 .sci a:hover {
 	background: royalblue;
 	color: #1f242d;
-	box-shadow: 0 2px 4px royalblue;
+	box-shadow: 0 0 4px royalblue;
 }
 
 .img-box {
