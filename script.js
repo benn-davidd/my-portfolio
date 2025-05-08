@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			// update layout and reset to first slide
 			setTimeout(() => {
 				swipers[popupId].update();
-				swipers[popupId].slideTo(0, 0);
+				swipers[popupId].slideTo(0, 500);
 			}, 50);
 		});
 

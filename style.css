@@ -469,6 +469,7 @@ a {
 .swiper-container {
 	width: 90%;
 	max-width: 800px;
+	user-select: none;
 }
 
 .swiper-slide img {
