@@ -454,6 +454,7 @@ a {
 	z-index: 100;
 	justify-content: center;
 	align-items: center;
+	transition: 0.3s ease;
 }
 
 .popup-overlay {
@@ -503,4 +504,34 @@ a {
 	opacity: 0;
 	animation: show-content 1.3s linear forwards;
 	animation-delay: 1.2s;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.form-control {
+	outline: none;
+	background: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px 0;
+	font-size: 15px;
+	resize: none;
+	width: 100%;
+}
+
+.input-group {
+	width: 100%;
+}
+
+.btn2 {
+	width: 30%;
+	align-self: center;
 }
