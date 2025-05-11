@@ -54,3 +54,55 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 });
+
+// CONTACT FORM
+
+// using EmailJS api create an account here: https://www.emailjs.com
+
+document.addEventListener("DOMContentLoaded", function () {
+	emailjs.init("JTiXE0QegyIWEZ__F");
+	const contactForm = document.querySelector(".contact-form");
+
+	if (!contactForm) {
+		console.error("Error: Contact form not found!");
+		return;
+	}
+
+	contactForm.addEventListener("submit", function (event) {
+		event.preventDefault();
+
+		const formData = new FormData(contactForm);
+
+		// take the data from your html for emailing
+		const formValues = {
+			from_name: formData.get("fullname"),
+			from_email: formData.get("email"),
+			email_subject: formData.get("subject"),
+			message: formData.get("message"),
+		};
+
+		console.log("Form values being sent:", formValues);
+
+		if (
+			!formValues.from_name ||
+			!formValues.from_email ||
+			!formValues.message
+		) {
+			alert("Please fill in all required fields.");
+			return;
+		}
+
+		// service_id and template-id from your emailJs
+		emailjs.send("service_zdif93d", "template_hxmp3fm", formValues).then(
+			function (response) {
+				alert("Email sent successfully!");
+				console.log("Email sent successfully!", response);
+				contactForm.reset();
+			},
+			function (error) {
+				alert("Error sending message: " + JSON.stringify(error));
+				console.error("Error sending message: ", error);
+			}
+		);
+	});
+});
