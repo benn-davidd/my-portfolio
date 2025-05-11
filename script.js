@@ -21,6 +21,38 @@ ScrollReveal().reveal(".subheading", {
 	opacity: 0,
 });
 
+// NAVBAR Active Link on click and scroll position
+
+const navLinks = document.querySelectorAll(".nav-link");
+const sections = document.querySelectorAll("section");
+
+// Highlight on scroll
+window.addEventListener("scroll", () => {
+	let currentSection = "";
+
+	sections.forEach((section) => {
+		const sectionTop = section.offsetTop - 100;
+		if (pageYOffset >= sectionTop) {
+			currentSection = section.getAttribute("id");
+		}
+	});
+
+	navLinks.forEach((link) => {
+		link.classList.remove("active");
+		if (link.getAttribute("href") === `#${currentSection}`) {
+			link.classList.add("active");
+		}
+	});
+});
+
+// Highlight on click
+navLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		navLinks.forEach((l) => l.classList.remove("active"));
+		link.classList.add("active");
+	});
+});
+
 // NAVBAR background change/visible on scroll
 
 window.addEventListener("scroll", () => {

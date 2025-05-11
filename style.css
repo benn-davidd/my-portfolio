@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -15,6 +16,24 @@ body {
 a {
 	color: #fff;
 	text-decoration: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #1f242d;
+}
+
+::-webkit-scrollbar-thumb {
+	background: royalblue;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+	display: block;
 }
 
 /* NAVBAR */
@@ -65,15 +84,14 @@ a {
 	list-style: none;
 	margin-left: 45px;
 }
-
-#navbar ul li a {
+.nav-link {
 	font-size: 18px;
 	font-weight: 500;
 	transition: 0.5s;
 }
 
-#navbar ul li a:hover,
-#navbar ul li.active a {
+.nav-link:hover,
+.nav-link.active {
 	color: royalblue;
 }
 
