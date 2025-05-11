@@ -536,3 +536,10 @@ form {
 	width: 30%;
 	align-self: center;
 }
+
+/* FOOTER */
+
+#copyright {
+	text-align: center;
+	color: #8d8b8b;
+}

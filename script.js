@@ -1,3 +1,23 @@
+// ANIMATIONS - ScrollReveal
+
+// heading
+ScrollReveal().reveal(".heading", {
+	origin: "top",
+	distance: "50px",
+	duration: 1000,
+	delay: 200,
+	opacity: 0,
+});
+
+//subheading
+ScrollReveal().reveal(".subheading", {
+	origin: "right",
+	distance: "50px",
+	duration: 1000,
+	delay: 200,
+	opacity: 0,
+});
+
 // NAVBAR background change/visible on scroll
 
 window.addEventListener("scroll", () => {
@@ -106,3 +126,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		);
 	});
 });
+
+// COPYRIGHT
+
+const currentYear = new Date().getFullYear();
+
+document.getElementById("copyright").innerHTML =
+	"&copy; " + currentYear + ". David Ben-Emu";
