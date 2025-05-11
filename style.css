@@ -310,13 +310,18 @@ a {
 	animation-delay: 1.2s;
 }
 
+.preheading {
+	font-weight: 600;
+}
+
 .heading {
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .subheading {
 	font-size: 1.2rem;
+	font-weight: 500;
 	color: white;
 	border-left: 4px solid royalblue;
 	padding-left: 0.6rem;

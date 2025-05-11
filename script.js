@@ -3,7 +3,7 @@
 // heading
 ScrollReveal().reveal(".heading", {
 	origin: "top",
-	distance: "30px",
+	distance: "10px",
 	duration: 1200,
 	delay: 200,
 	easing: "ease-in-out",
@@ -14,7 +14,7 @@ ScrollReveal().reveal(".heading", {
 //subheading
 ScrollReveal().reveal(".subheading", {
 	origin: "right",
-	distance: "30px",
+	distance: "25px",
 	duration: 1200,
 	easing: "ease-in-out",
 	reset: false,
