@@ -312,6 +312,16 @@ a {
 
 .preheading {
 	font-weight: 600;
+	color: #8d8b8b;
+}
+
+.divider-line {
+	display: inline-block;
+	height: 2px;
+	width: 100px;
+	background: royalblue;
+	margin-left: 5px;
+	vertical-align: middle;
 }
 
 .heading {
