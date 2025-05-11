@@ -3,18 +3,21 @@
 // heading
 ScrollReveal().reveal(".heading", {
 	origin: "top",
-	distance: "50px",
+	distance: "30px",
 	duration: 1000,
 	delay: 200,
+	easing: "ease-in-out",
+	reset: false,
 	opacity: 0,
 });
 
 //subheading
 ScrollReveal().reveal(".subheading", {
 	origin: "right",
-	distance: "50px",
+	distance: "30px",
 	duration: 1000,
-	delay: 200,
+	easing: "ease-in-out",
+	reset: false,
 	opacity: 0,
 });
 
