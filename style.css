@@ -517,6 +517,19 @@ a {
 	background-color: #fff;
 }
 
+.technologies {
+	margin: 20px 0;
+	display: flex;
+	gap: 0.3rem;
+}
+
+.technologies p {
+	padding: 5px 10px;
+	border: 0.3px solid royalblue;
+	border-radius: 10px;
+	background-color: #1f242d;
+}
+
 /* CONTACT SECTION */
 
 #contact {
