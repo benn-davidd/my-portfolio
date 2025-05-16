@@ -416,7 +416,7 @@ a {
 
 .portfolio-card {
 	position: relative;
-	background: white;
+	background: #2a2d34;
 	border-radius: 8px;
 	border: 1px solid transparent;
 	display: flex;
@@ -543,9 +543,11 @@ a {
 	height: fit-content;
 	padding: 110px 9% 30px;
 	color: #fff;
+	gap: 2rem;
 }
 
-.contact {
+.contact-form,
+.contact-card {
 	padding: 4% 5%;
 	background: #1f242d;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -569,14 +571,20 @@ form {
 }
 
 .form-control {
+	border: none;
 	outline: none;
-	background: #fff;
+	color: #fff;
 	padding: 10px;
 	border-radius: 5px;
 	margin: 10px 0;
 	font-size: 15px;
 	resize: none;
 	width: 100%;
+	background-color: #2a2d34;
+}
+
+.form-control:focus {
+	border-color: royalblue;
 }
 
 .input-group {
@@ -584,8 +592,37 @@ form {
 }
 
 .btn2 {
-	width: 30%;
+	width: 240px;
 	align-self: center;
+}
+
+.heading span {
+	color: royalblue;
+}
+
+.contact-grid {
+	display: grid;
+	gap: 2rem;
+}
+
+.contact-card {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	gap: 1rem;
+	width: 250px;
+	height: 150px;
+}
+
+.contact-card a {
+	text-decoration: none;
+	color: white;
+}
+
+.contact-card i {
+	color: royalblue;
+	font-size: 3rem;
 }
 
 /* FOOTER */
