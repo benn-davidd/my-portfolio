@@ -1,0 +1,42 @@
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 85%;
+	}
+
+	#about,
+	#contact,
+	#portfolio,
+	#contact {
+		padding: 110px 6% 30px;
+	}
+
+	.form-control,
+	.btn {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	#about,
+	#contact,
+	#portfolio,
+	#contact {
+		padding: 110px 5% 30px;
+	}
+
+	.form-group {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.btn2 {
+		width: 200px;
+	}
+
+	.contact-card {
+		width: 220px;
+	}
+}
+
+@media screen and (max-width: 810px) {
+}

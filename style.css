@@ -43,7 +43,7 @@ a {
 	left: 0;
 	top: 0;
 	width: 100%;
-	padding: 25px 9%;
+	padding: 25px 8%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -102,7 +102,7 @@ a {
 	align-items: center;
 	gap: 50px;
 	height: 100vh;
-	padding: 60px 9% 0;
+	padding: 60px 8% 0;
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
@@ -294,7 +294,7 @@ a {
 	display: flex;
 	align-items: center;
 	height: fit-content;
-	padding: 110px 9% 30px;
+	padding: 110px 8% 30px;
 	color: #fff;
 }
 
@@ -326,7 +326,7 @@ a {
 
 .heading {
 	font-size: 1.8rem;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 .subheading {
@@ -391,7 +391,7 @@ a {
 	display: flex;
 	align-items: center;
 	height: fit-content;
-	padding: 110px 9% 30px;
+	padding: 110px 8% 30px;
 	color: #fff;
 }
 
@@ -541,7 +541,7 @@ a {
 	display: flex;
 	align-items: center;
 	height: fit-content;
-	padding: 110px 9% 30px;
+	padding: 110px 8% 30px;
 	color: #fff;
 	gap: 2rem;
 }
@@ -571,7 +571,7 @@ form {
 }
 
 .form-control {
-	border: none;
+	border: 0.13rem solid #2a2d34;
 	outline: none;
 	color: #fff;
 	padding: 10px;
