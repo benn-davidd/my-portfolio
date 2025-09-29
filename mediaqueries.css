@@ -69,5 +69,37 @@
 	}
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 500px) {
+	#about,
+	#contact,
+	#portfolio,
+	#contact {
+		padding: 110px 0 30px;
+	}
+
+	/* HOME SECTION */
+	#home {
+		flex-direction: column;
+	}
+
+	/* PORTFOLIO SECTION */
+	.view-project {
+		font-size: 40px;
+		bottom: 10%;
+	}
+
+	/* CONTACT SECTION */
+	.cards-container {
+		flex-direction: column;
+	}
+
+	.form-control {
+		padding: 6px;
+		font-size: 12px;
+	}
+
+	.btn2 {
+		width: 180px;
+		font-size: small;
+	}
 }
