@@ -263,25 +263,6 @@ a {
 	/* mix-blend-mode: lighten; */
 }
 
-/* .bars-animation {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	z-index: -1;
-} */
-
-/* .bar {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #1f242d;
-	background-image: url(http://www.transparenttextures.com/patterns/cartographer.png);
-	transform: translateY(-100%);
-	animation: show-bars 0.3s ease-in-out forwards;
-	animation-delay: calc(0.1s * var(--i));
-} */
-
 @keyframes show-bars {
 	100% {
 		transform: translateY(0%);

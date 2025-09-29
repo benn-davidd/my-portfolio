@@ -77,15 +77,57 @@
 		padding: 110px 0 30px;
 	}
 
+	.heading {
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
 	/* HOME SECTION */
 	#home {
+		flex-direction: column-reverse;
+		justify-content: center;
+		padding: 100px 6% 0;
+	}
+
+	.home-info h1 {
+		font-size: 35px;
+	}
+
+	.home-info h2 {
+		font-size: 22px;
+	}
+
+	.home-info p {
+		font-size: 14px;
+	}
+
+	.btn-sci {
 		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.sci {
+		margin-left: 0;
+	}
+
+	.sci a {
+		font-size: x-large;
+	}
+
+	.img-box {
+		width: 40vw;
+		height: 40vw;
 	}
 
 	/* PORTFOLIO SECTION */
 	.view-project {
 		font-size: 40px;
 		bottom: 10%;
+		display: block;
+	}
+
+	.layer {
+		bottom: 0;
 	}
 
 	/* CONTACT SECTION */
