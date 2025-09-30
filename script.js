@@ -4,22 +4,22 @@
 ScrollReveal().reveal(".heading", {
 	origin: "top",
 	distance: "10px",
-	duration: 1200,
-	delay: 200,
-	easing: "ease-in-out",
+	duration: 1100,
+	delay: 150,
+	easing: "ease-out",
 	reset: false,
 	opacity: 0,
 });
 
 //subheading
-ScrollReveal().reveal(".subheading", {
-	origin: "right",
-	distance: "25px",
-	duration: 1200,
-	easing: "ease-in-out",
-	reset: false,
-	opacity: 0,
-});
+// ScrollReveal().reveal(".subheading", {
+// 	origin: "right",
+// 	distance: "25px",
+// 	duration: 1200,
+// 	easing: "ease-in-out",
+// 	reset: false,
+// 	opacity: 0,
+// });
 
 // NAVBAR Active Link on click and scroll position
 
