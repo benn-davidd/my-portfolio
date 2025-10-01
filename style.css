@@ -18,24 +18,6 @@ a {
 	text-decoration: none;
 }
 
-/* Scrollbar */
-/* ::-webkit-scrollbar {
-	width: 10px;
-}
-
-::-webkit-scrollbar-track {
-	background: #1f242d;
-}
-
-::-webkit-scrollbar-thumb {
-	background: royalblue;
-	border-radius: 10px;
-}
-
-::-webkit-scrollbar-button {
-	display: block;
-} */
-
 /* NAVBAR */
 
 #navbar {
@@ -80,7 +62,7 @@ a {
 	display: flex;
 }
 
-#navbar ul li {
+#nav-links li {
 	list-style: none;
 	margin-left: 45px;
 }
@@ -93,6 +75,36 @@ a {
 .nav-link:hover,
 .nav-link.active {
 	color: royalblue;
+}
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 28px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 110;
+}
+
+.hamburger span {
+	display: block;
+	height: 3px;
+	width: 100%;
+	background: white;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	display: none;
+	z-index: 90;
 }
 
 /* HOME SECTION */

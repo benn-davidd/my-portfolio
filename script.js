@@ -23,7 +23,7 @@ ScrollReveal().reveal(".heading", {
 
 // NAVBAR Active Link on click and scroll position
 
-const navLinks = document.querySelectorAll(".nav-link");
+const navLink = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section");
 
 // Highlight on scroll
@@ -37,7 +37,7 @@ window.addEventListener("scroll", () => {
 		}
 	});
 
-	navLinks.forEach((link) => {
+	navLink.forEach((link) => {
 		link.classList.remove("active");
 		if (link.getAttribute("href") === `#${currentSection}`) {
 			link.classList.add("active");
@@ -46,9 +46,9 @@ window.addEventListener("scroll", () => {
 });
 
 // Highlight on click
-navLinks.forEach((link) => {
+navLink.forEach((link) => {
 	link.addEventListener("click", () => {
-		navLinks.forEach((l) => l.classList.remove("active"));
+		navLink.forEach((l) => l.classList.remove("active"));
 		link.classList.add("active");
 	});
 });
@@ -62,6 +62,27 @@ window.addEventListener("scroll", () => {
 	} else {
 		navbar.classList.remove("scrolled");
 	}
+});
+
+// HAMBURGER MENU
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+const overlay = document.getElementById("overlay");
+const body = document.body;
+
+function toggleMenu() {
+	hamburger.classList.toggle("active");
+	navLinks.classList.toggle("show");
+	overlay.classList.toggle("show");
+	body.classList.toggle("no-scroll");
+}
+
+hamburger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+
+// Close menu when clicking a nav link (optional)
+document.querySelectorAll("#nav-links a").forEach((link) => {
+	link.addEventListener("click", toggleMenu);
 });
 
 // PORFOLIO swiper popup
